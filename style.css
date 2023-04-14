@@ -112,6 +112,7 @@ button {
 }
 
 .head {
+  height: 100%;
   animation: breathe 7s ease-in-out infinite;
 }
 
