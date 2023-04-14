@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 5vw;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#313943 45%, #3e474f 60%, #1f2530 70%);
+}
+
+.full-width-height {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow-x: clip;
+}
+
+.bg {
+  height: 100%;
+}
+
+.header-char {
+  position: absolute;
+  height: 100%;
+}
+
+.header-char .img-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.header-char img {
+  display: block;
+  height: 100%;
+}
+
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+  color: #fff;
+  font-size: 0.2rem;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.grid-4-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 0.5rem 1rem;
+  padding-bottom: 20px;
+  background-color: #e3e1d8;
+  margin: 0 20px;
+  border-radius: 10px 10px 0 0;
+  text-align: left;
+  color: #a0a0a0;
+}
+
+h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  margin: 1em 0;
+}
+
+p {
+  font-size: 0.2rem;
+  line-height: 2;
+}
+
+.grid-item img {
+  width: 100%;
+}
+
+button {
+  font-size: 0.2rem;
+  border-radius: 10px;
+  background-color: #de805a;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 50px;
+  }
+
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+  .grid-4-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+.head {
+  animation: breathe 7s ease-in-out infinite;
+}
+
+.body {
+  animation: breathe 8s ease-in-out infinite;
+}
+
+.eyes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: fadeIn 10s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
