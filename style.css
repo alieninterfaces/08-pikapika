@@ -72,6 +72,12 @@ h2 {
   color: #a0a0a0;
 }
 
+.grid-4-columns .grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 h3 {
   font-weight: 700;
   text-transform: uppercase;
@@ -133,7 +139,7 @@ button {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-2%);
   }
   100% {
     transform: translateY(0);
